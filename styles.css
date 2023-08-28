@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: red;
+  font-family: Tahoma;
+  font-style: italic;
+}
+
+p {
+  color: yellow;
+  font-family: Tahoma;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: darkred;
+}
