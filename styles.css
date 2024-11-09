@@ -28,3 +28,10 @@ a:hover {
 a:active {
   color: darkred;
 }
+
+.header {
+	height: 256px;
+	background-image: url('https://files.catbox.moe/13nsdw.png');
+	background-position: left;
+	background-repeat: no-repeat;
+}
