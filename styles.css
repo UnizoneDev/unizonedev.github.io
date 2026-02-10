@@ -1,11 +1,15 @@
 body {
   background-color: black;
+  background-image: url("ImageResources/BackgroundTex/GuroFenceBG.png"), url("ImageResources/BackgroundTex/GuroMetalBG.png");
 }
 
 h1 {
   color: red;
   font-family: Tahoma;
   font-style: italic;
+  border-style: solid;
+  border-color: darkred;
+  border-width: 4px;
 }
 
 p {
@@ -34,4 +38,25 @@ a:active {
 	background-image: url("ImageResources/AbyssalFearMoonrune.png");
 	background-position: left;
 	background-repeat: no-repeat;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: darkred;
+  background-image: url("ImageResources/BackgroundTex/GuroMetalBG.png");
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Tahoma;
+}
+
+.navbar a:hover {
+  overflow: hidden;
+  background-color: #111111;
+  color: yellow;
 }
