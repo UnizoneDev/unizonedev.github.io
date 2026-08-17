@@ -1,15 +1,17 @@
 body {
   background-color: black;
-  background-image: url("ImageResources/BackgroundTex/GuroFenceBG.png"), url("ImageResources/BackgroundTex/GuroMetalBG.png");
 }
 
 h1 {
   color: red;
   font-family: Tahoma;
   font-style: italic;
-  border-style: solid;
-  border-color: darkred;
-  border-width: 4px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-color: white;
+  border-width: 2px;
 }
 
 p {
@@ -33,30 +35,55 @@ a:active {
   color: darkred;
 }
 
+.main-content {
+	margin-left: 256px;
+}
+
 .header {
+	width: 256px;
 	height: 256px;
-	background-image: url("ImageResources/AbyssalFearMoonrune.png");
+	background-image: url("ImageResources/AbyssalFearMoonruneAnimated.gif");
 	background-position: left;
 	background-repeat: no-repeat;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: darkred;
-  background-image: url("ImageResources/BackgroundTex/GuroMetalBG.png");
+  background-color: black;
+  width: 256px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.navbar a {
-  float: left;
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li a {
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 32px;
   text-decoration: none;
   font-family: Tahoma;
+  display: block;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
 }
 
-.navbar a:hover {
+.navbar li a:hover {
   overflow: hidden;
-  background-color: #111111;
-  color: yellow;
+  background-color: white;
+  color: black;
+}
+
+.layout-page {
+	display: flex;
+    min-height: 100vh;
 }
